@@ -1,0 +1,143 @@
+/* CSS declarations go here */
+* {
+  
+}
+
+body {  
+  background: black url(/img/blackboard_bg.jpg) fixed round !important;
+  font-family: Roboto !important;
+}
+
+header {
+  background: #eeeeee;
+  background-image: linear-gradient(to bottom, #ffffff, #eeeeee 50%);
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+
+hr{
+  border-top: 1px solid #000000 !important;
+}
+
+.app-title {
+  border-style: groove;
+}
+
+.bg-color {
+  background-color: #eeeeee !important;
+}
+
+.teacher-list {
+  padding: 0 1em;
+  word-break: break-all;
+}
+
+.teacher-list-element:hover {
+  border-radius: 1em;
+  border-style: groove;
+  margin: 0 0 -0.786em 0;
+  cursor: pointer;
+}
+
+.teacher-list-element-selected {
+  background-color: #cccccc;
+  border-radius: 1em;
+  border-style: ridge;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+}
+
+.teacher-info {
+  text-align: center;
+}
+
+.teacher-profile-img {
+  border-radius: 1em;
+  border: thick groove snow;
+  margin-top: 1.5em;
+  width: 15em;
+}
+
+.inline-img-responsive {
+  display: inline;
+  max-width: 100%;
+
+}
+
+.list-rating-stars-img {
+  margin-top: 0.5em;
+  width: 16em;
+  border-radius: 1em;
+}
+
+.rating-stars-img {
+  width: 25em;
+}
+
+.criteria-checkbox {
+  height: 2em;
+  width: 2em;
+}
+
+.btn-add-review {
+  margin-top: 1em;
+}
+
+@media (min-width: 992px) {
+  .add-review {
+    padding: 0 20%;
+  }
+}
+
+.reviews {
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .reviews {
+    padding: 0 20%;
+  }
+}
+
+.good-review {
+  background-color: rgba(139, 195, 74, 0.25);
+}
+
+.bad-review {
+  background-color: rgba(244, 67, 54, 0.25);
+}
+
+.comments {
+  background-color: rgba(33, 150, 243, 0.25);
+}
+
+.caption {
+  display: block;
+  margin: -0.5em 0;
+  word-break: break-all;
+  color: #005fb1;
+}
+
+form {
+  margin-bottom: -10px;
+  margin-top: 10px;
+  padding-top: 1em;
+  position: relative;
+}
+
+.new-task input {
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+
+header .hide-completed {
+  float: right;
+}
