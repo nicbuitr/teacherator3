@@ -41,6 +41,7 @@ class App extends Component {
         }
         this.setState({selectedTeacherId: teacherId});
         document.getElementById(teacherId).className = 'col-xs-4 teacher-list-element-selected';
+        $('#teacher-reviews-div').scrollView();
     }
 
     handleKeyDown(event){
@@ -94,7 +95,7 @@ class App extends Component {
       <div className="container">
         <header className="text-center jumbotron">
           <div className="app-title">
-            <h1>Teacherator</h1>
+            <img src="/img/logo.png" className="inline-img-responsive" alt="Teacherator Logo"/>
             <p>The teacher reviewing App</p>
           </div>
           <form className="new-task" >

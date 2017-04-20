@@ -588,6 +588,14 @@
 
     $.fn.rating.Constructor = Rating;
 
+    $.fn.scrollView = function () {
+        return this.each(function () {
+            $('html, body').animate({
+                scrollTop: $(this).offset().top
+            }, 1000);
+        });
+    };
+
     /**
      * Convert automatically inputs with class 'rating' into Krajee's star rating control.
      */

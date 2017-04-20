@@ -34,14 +34,10 @@ export default class Teacher extends Component {
         };
     }
 
-    componentDidMount(){
-        window.location.replace('#teacher-reviews-div');
-    }
-
     addReview(e){
         e.preventDefault();
         this.state.createdAt = new Date();      
-        Meteor.call('teachers.addReview', this.props.teacher._id, this.state);
+        Meteor.call('teachers.addReview', this.props.teacher, this.state);
         this.props.teacher.reviews.unshift(this.state);
         var criterias = this.state.criterias;
 
@@ -57,7 +53,7 @@ export default class Teacher extends Component {
             let starsInput = document.getElementById('form-stars-div').getElementsByClassName('filled-stars')[0];
             starsInput.style.width = this.state.totalScore*20 + '%';  
         }
-        window.location.replace('#reviews-div');
+        $('#reviews-div').scrollView();
     }
 
     handleInputChange(e){

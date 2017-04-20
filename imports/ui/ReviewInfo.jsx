@@ -5,7 +5,7 @@ import { Meteor } from 'meteor/meteor';
 export default class ReviewInfo extends Component {
     deleteReview(e){
         e.preventDefault();
-        Meteor.call('teachers.deleteReview', this.props.teacher._id, this.props.review);
+        Meteor.call('teachers.deleteReview', this.props.teacher, this.props.review);
         this.props.teacher.reviews.pop(this.state);
     }
 
