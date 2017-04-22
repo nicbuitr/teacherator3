@@ -20,8 +20,9 @@ export default class ReviewInfo extends Component {
         }
         return(
             <div className="panel panel-default" tabIndex="0">
-                <div className="bg-color panel-heading text-center">                    
-                    <span className="pull-right text-uppercase delete-button" onClick={this.deleteReview.bind(this)}>{new Date(this.props.review.createdAt).toLocaleString()}&nbsp;&times;</span>
+                <div className="bg-color panel-heading text-center">
+                    <div className="text-left">{new Date(this.props.review.createdAt).toLocaleString()}</div>                  
+                    <span className="pull-right text-uppercase delete-button" onClick={this.deleteReview.bind(this)}>&nbsp;&times;</span>
                     <ReviewStars teacher={this.props.teacher} section="teacher_reviews" stars={totalScore} size="xl"/>
                 </div>
                 {rows}

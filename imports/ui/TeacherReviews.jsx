@@ -26,6 +26,7 @@ export default class TeacherReviews extends Component {
               <div className="add-review">
                 <AddReview teacher={this.props.teacher} key={'teacher_add_review_'+this.props.teacher._id}/>
               </div>
+              <div id="review-add-result" className="review-add-result"></div>
               <div className="reviews text-center">
                 {this.renderReviews()}                
               </div>

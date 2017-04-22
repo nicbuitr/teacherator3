@@ -1,8 +1,9 @@
 import { Component } from 'react';
 import ReviewStars from './ReviewStars.jsx';
 import { Meteor } from 'meteor/meteor';
+import { rateLimitTest } from '../api/teachers.js';
 
-export default class Teacher extends Component {
+export default class AddReview extends Component {
     constructor(props) {
         super(props);
     
@@ -36,24 +37,36 @@ export default class Teacher extends Component {
 
     addReview(e){
         e.preventDefault();
-        this.state.createdAt = new Date();      
-        Meteor.call('teachers.addReview', this.props.teacher, this.state);
-        this.props.teacher.reviews.unshift(this.state);
-        var criterias = this.state.criterias;
+        this.state.createdAt = new Date();
 
-        //Reinitialize for a new review
-        this.state.totalScore = 0;
-        for (var i = 1; i <= criterias.length; i++) {
-            document.getElementById('criteria_'+i).checked = false;
-            criterias[i-1].selection = 0;
-        }         
-        document.getElementById('comments').value = '';
-        this.setState({comments: ''});
-        if (document.getElementById('form-stars-div').getElementsByClassName('filled-stars').length > 0){
-            let starsInput = document.getElementById('form-stars-div').getElementsByClassName('filled-stars')[0];
-            starsInput.style.width = this.state.totalScore*20 + '%';  
-        }
-        $('#reviews-div').scrollView();
+        Meteor.call('teachers.addReview', this.props.teacher, this.state, 
+            (error, result) => {
+                if(error){
+                    let res = (result === undefined)?'':result;
+                    document.getElementById('review-add-result').innerHTML = '<div id=\"review-add-result\" className=\"review-add-result\"><div class=\"panel panel-default\"><div class=\"bad-review panel-body text-center\"><h4><strong>' + error + res + '</strong></h4></div></div>';
+                }
+                else{
+                    document.getElementById('review-add-result').innerHTML = '<div id=\"review-add-result\" className=\"review-add-result\"><div class=\"panel panel-default\"><div class=\"good-review panel-body text-center\"><h4><strong>Review succesfully added, thank you!</strong></h4></div></div>';
+                    this.props.teacher.reviews.unshift(this.state);
+                    var criterias = this.state.criterias;
+
+                    //Reinitialize for a new review
+                    this.state.totalScore = 0;
+                    for (var i = 1; i <= criterias.length; i++) {
+                        document.getElementById('criteria_'+i).checked = false;
+                        criterias[i-1].selection = 0;
+                    }         
+                    document.getElementById('comments').value = '';
+                    this.setState({comments: ''});
+                    if (document.getElementById('form-stars-div').getElementsByClassName('filled-stars').length > 0){
+                        let starsInput = document.getElementById('form-stars-div').getElementsByClassName('filled-stars')[0];
+                        starsInput.style.width = this.state.totalScore*20 + '%';  
+                    }
+                }
+            }
+        );
+
+        $('#review-add-result').scrollView();
     }
 
     handleInputChange(e){

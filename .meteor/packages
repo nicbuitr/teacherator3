@@ -20,3 +20,4 @@ shell-server@0.2.3            # Server-side component of the `meteor shell` comm
 react
 react-meteor-data
 audit-argument-checks
+ddp-rate-limiter

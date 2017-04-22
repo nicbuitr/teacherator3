@@ -92,6 +92,12 @@ hr{
   }
 }
 
+@media (min-width: 992px) {
+  .review-add-result {
+    padding: 0 20%;
+  }
+}
+
 .reviews {
   font-weight: bold;
 }
