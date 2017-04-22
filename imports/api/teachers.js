@@ -72,7 +72,7 @@ if (Meteor.isServer) {
                 Teachers.update(teacher._id, { $set: { avg_review: newAverageScore }, $push: { reviews: review } });
             }
             else{
-                alert('Parameter teacher different from database one!');
+                //alert('Parameter teacher different from database one!');
                 return;
             }
         },
@@ -118,7 +118,7 @@ if (Meteor.isServer) {
                 Teachers.update(teacher._id, { $set: { avg_review: newAverageScore }, $pop: { reviews: review } });
             }
             else{
-                alert('Parameter teacher different from database one!');
+                //alert('Parameter teacher different from database one!');
                 return;
             }
         },
