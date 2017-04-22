@@ -21,3 +21,4 @@ react
 react-meteor-data
 audit-argument-checks
 ddp-rate-limiter
+practicalmeteor:mocha
