@@ -9,7 +9,6 @@ install:
   - export PATH=$HOME/.meteor:$PATH
   - meteor node --version
   - meteor npm install -g n
-  - meteor n stable
   - meteor node --version
   - meteor npm install
   - meteor npm install react --save
