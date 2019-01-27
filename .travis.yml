@@ -4,8 +4,7 @@ node_js:
 install:
   - npm install mocha
   - npm install enzyme
+  - npm install enzyme-adapter-react-16
   - npm install babel-core
   - npm install babel-preset-react
   - npm install
-script:
-  - npm test
