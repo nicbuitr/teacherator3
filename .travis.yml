@@ -11,9 +11,8 @@ install:
   - meteor npm install react
   - meteor npm install mocha
   - meteor npm install enzyme
+  - meteor npm install react-test-renderer
   - meteor npm install babel-core
-  - meteor npm install babel-preset-env
-  - meteor npm install babel-preset-react
   - meteor npm install chai
   - meteor add meteortesting:mocha
 
