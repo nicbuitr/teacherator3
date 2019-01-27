@@ -25,7 +25,7 @@ install:
   - meteor add meteortesting:mocha
 
 script:
-- TEST_BROWSER_DRIVER=chrome meteor test --once --driver-package meteortesting:mocha
+- TEST_CLIENT=0 meteor test --once --driver-package meteortesting:mocha
 
 cache:
   directories:
