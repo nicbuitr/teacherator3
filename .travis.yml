@@ -7,10 +7,6 @@ install:
   # Add meteor to path (instead of asking for sudo in the Travis container)
   # We can then use the faster container infrastructure - http://docs.travis-ci.com/user/workers/container-based-infrastructure/
   - export PATH=$HOME/.meteor:$PATH
-  - sudo npm cache clean -f
-  - sudo npm install -g n
-  - sudo n stable
-  - meteor npm install -g n
   - meteor npm install
   - meteor npm install react --save
   - meteor npm install mocha --save
