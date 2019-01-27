@@ -3,6 +3,7 @@ node_js:
   - "node"
 install:
   - npm install mocha
+  - npm install enzyme
   - npm install babel-core
   - npm install babel-preset-react
   - npm install
