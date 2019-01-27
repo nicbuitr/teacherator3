@@ -8,11 +8,12 @@ install:
   # We can then use the faster container infrastructure - http://docs.travis-ci.com/user/workers/container-based-infrastructure/
   - export PATH=$HOME/.meteor:$PATH
   - meteor npm install
-  - meteor npm install mocha -g
-  - meteor npm install enzyme -g
-  - meteor npm install babel-core -g
-  - meteor npm install babel-preset-env -g
-  - meteor npm install babel-polyfill -g
+  - meteor npm install mocha --save-dev
+  - meteor npm install enzyme --save-dev
+  - meteor npm install babel-core --save-dev
+  - meteor npm install babel-preset-env --save-dev
+  - meteor npm install babel-preset-react --save-dev
+  - meteor npm install babel-polyfill --save
 script:
 - meteor npm test
 
