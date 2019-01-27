@@ -12,6 +12,7 @@ install:
   - meteor npm install enzyme
   - meteor npm install babel-core
   - meteor npm install core-js
+  - meteor npm install babel-preset-es2015
 script:
 - meteor test
 
