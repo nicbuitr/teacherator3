@@ -11,6 +11,7 @@ install:
   - meteor npm install mocha
   - meteor npm install enzyme
   - meteor npm install babel-core
+  - meteor npm install core-js
 script:
 - meteor npm test
 
