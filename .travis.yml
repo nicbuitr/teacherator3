@@ -13,8 +13,6 @@ install:
   - meteor npm install enzyme --save
   - meteor npm install react-test-renderer --save
   - meteor npm install babel-core --save
-  - meteor npm install babel-preset-env --save
-  - meteor npm install babel-preset-react --save
   - meteor npm install chai --save
   - meteor add meteortesting:mocha
 
