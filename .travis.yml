@@ -14,6 +14,7 @@ install:
   - meteor npm install babel-preset-env
   - meteor npm install babel-preset-react
   - meteor npm install babel-polyfill
+  - meteor add ecmascript
 script:
 - meteor npm test
 
