@@ -9,14 +9,14 @@ install:
   - export PATH=$HOME/.meteor:$PATH
   - meteor npm install
   - meteor npm install react --save
-  - meteor npm install mocha
-  - meteor npm install enzyme
-  - meteor npm install enzyme-adapter-react-16
-  - meteor npm install babel-core
-  - meteor npm install babel-preset-env
-  - meteor npm install babel-preset-react
-  - meteor npm install babel-polyfill
-  - meteor npm install chai
+  - meteor npm install mocha --save
+  - meteor npm install enzyme --save
+  - meteor npm install enzyme-adapter-react-16 --save
+  - meteor npm install babel-core --save
+  - meteor npm install babel-preset-env --save
+  - meteor npm install babel-preset-react --save
+  - meteor npm install babel-polyfill --save
+  - meteor npm install chai --save
   - meteor add meteortesting:mocha
 
 script:
