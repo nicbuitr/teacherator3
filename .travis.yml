@@ -10,5 +10,6 @@ install:
   - meteor npm install
   - meteor npm install mocha
   - meteor npm install enzyme
+  - meteor add ecmascript
 script:
 - meteor npm test
