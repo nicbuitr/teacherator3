@@ -19,7 +19,7 @@ install:
   - meteor add meteortesting:mocha
   - meteor npm install chai
 script:
-- meteor npm test
+- meteor test
 
 cache:
   directories:
