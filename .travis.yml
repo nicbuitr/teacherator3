@@ -12,6 +12,7 @@ install:
   - meteor npm install enzyme
   - meteor npm install babel-core
   - meteor npm install babel-preset-env
+  - meteor npm install babel-polyfill
 script:
 - meteor npm test
 
