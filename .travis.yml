@@ -17,10 +17,11 @@ install:
   - meteor npm install babel-preset-react --save
   - meteor npm install babel-polyfill --save
   - meteor npm install chai --save
+  - meteor npm install selenium-webdriver chromedriver --save
   - meteor add meteortesting:mocha
 
 script:
-- meteor test --driver-package meteortesting:mocha
+- TEST_BROWSER_DRIVER=chrome --once meteor test --driver-package meteortesting:mocha
 
 cache:
   directories:
