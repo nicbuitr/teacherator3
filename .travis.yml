@@ -8,7 +8,7 @@ install:
   # We can then use the faster container infrastructure - http://docs.travis-ci.com/user/workers/container-based-infrastructure/
   - export PATH=$HOME/.meteor:$PATH
   - meteor node --version
-  - meteor npm install -g n
+  - meteor npm install npm -g
   - meteor node --version
   - meteor npm install
   - meteor npm install react --save
