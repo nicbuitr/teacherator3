@@ -10,6 +10,7 @@ install:
   - meteor npm install
   - meteor npm install mocha --save
   - meteor npm install enzyme --save
+  - meteor npm install enzyme-adapter-react-15.4 --save
   - meteor npm install babel-core --save
   - meteor npm install chai --save
   - meteor add meteortesting:mocha
