@@ -8,3 +8,4 @@ install:
   # We can then use the faster container infrastructure - http://docs.travis-ci.com/user/workers/container-based-infrastructure/
   - export PATH=$HOME/.meteor:$PATH
   - meteor npm install
+  - meteor npm install mocha
