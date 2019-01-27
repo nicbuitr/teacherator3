@@ -20,7 +20,7 @@ install:
   - meteor npm install babel-preset-react --save
   - meteor npm install babel-polyfill --save
   - meteor npm install chai --save
-  - meteor npm install selenium-webdriver chromedriver --save-dev
+  - meteor npm install nightmare --save-dev
   - meteor add meteortesting:mocha
 
 script:
