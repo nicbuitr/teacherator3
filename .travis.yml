@@ -10,6 +10,7 @@ install:
   - meteor npm install
   - meteor npm install mocha
   - meteor npm install enzyme
+  - meteor npm install enzyme-adapter-react-16
   - meteor npm install babel-core
   - meteor npm install babel-preset-env
   - meteor npm install babel-preset-react
