@@ -8,12 +8,14 @@ install:
   # We can then use the faster container infrastructure - http://docs.travis-ci.com/user/workers/container-based-infrastructure/
   - export PATH=$HOME/.meteor:$PATH
   - meteor npm install
-  - meteor npm install react
-  - meteor npm install mocha
-  - meteor npm install enzyme
-  - meteor npm install react-test-renderer
-  - meteor npm install babel-core
-  - meteor npm install chai
+  - meteor npm install react --save
+  - meteor npm install mocha --save
+  - meteor npm install enzyme --save
+  - meteor npm install react-test-renderer --save
+  - meteor npm install babel-core --save
+  - meteor npm install babel-preset-env --save
+  - meteor npm install babel-preset-react --save
+  - meteor npm install chai --save
   - meteor add meteortesting:mocha
 
 script:
