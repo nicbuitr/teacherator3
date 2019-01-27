@@ -16,7 +16,10 @@ Requirements:
 
 (Optional:
 
--  For testing: [Mocha.js](https://mochajs.org/)
+For testing: [Mocha.js](https://mochajs.org/):
+
+    $ meteor add meteortesting:mocha
+    $ meteor npm install --save-dev chai
 
 Clone this repository:
 
@@ -28,7 +31,7 @@ Run:
     
 For testing with [Mocha.js](https://mochajs.org/) run:
 
-    $ meteor npm test
+    $ meteor test
 
 This will install NPM packages and update the Meteor packages used in the project.
 
