@@ -13,3 +13,7 @@ install:
   - meteor npm install babel-core
 script:
 - meteor npm test
+
+cache:
+  directories:
+    - node_modules
