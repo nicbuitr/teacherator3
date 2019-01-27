@@ -16,6 +16,8 @@ install:
   - meteor npm install babel-preset-react
   - meteor npm install babel-polyfill
   - meteor add ecmascript
+  - meteor add meteortesting:mocha
+  - meteor npm install chai
 script:
 - meteor npm test
 
