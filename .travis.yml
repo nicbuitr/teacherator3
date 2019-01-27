@@ -7,10 +7,8 @@ install:
   # Add meteor to path (instead of asking for sudo in the Travis container)
   # We can then use the faster container infrastructure - http://docs.travis-ci.com/user/workers/container-based-infrastructure/
   - export PATH=$HOME/.meteor:$PATH
-  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-  - export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
   - meteor node --version
-  - nvm install node
+  - meteor nvm install node
   - meteor node --version
   - meteor npm install
   - meteor npm install react --save
