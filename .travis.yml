@@ -9,3 +9,4 @@ install:
   - export PATH=$HOME/.meteor:$PATH
   - meteor npm install
   - meteor npm install mocha
+  - meteor npm install enzyme
