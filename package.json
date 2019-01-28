@@ -1,6 +1,12 @@
 {
   "name": "teacherator3",
-  "private": true,
+  "description": "Web application to rate teachers",
+  "author": "Nicolás Buitrago Castaño (nicbuitr)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicbuitr/teacherator3.git"
+  },
   "scripts": {
     "start": "meteor run",
     "test": "mocha --require babel-core/register"
@@ -24,5 +30,8 @@
     "enzyme": "^2.8.2",
     "eslint": "^3.18.0",
     "eslint-plugin-react": "^6.10.3"
+  }
+  "babel": {
+		"plugins": true
   }
 }
