@@ -9,8 +9,7 @@ install:
   - export PATH=$HOME/.meteor:$PATH
   - meteor npm install
   - meteor npm install mocha --save
-  - meteor npm install enzyme --save
-  - meteor npm install enzyme-adapter-react-15.4 --save
+  - meteor npm install enzyme @2.8.0 --save
   - meteor npm install babel-core --save
   - meteor npm install chai --save
   - meteor add meteortesting:mocha
