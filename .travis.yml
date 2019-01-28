@@ -11,8 +11,8 @@ install:
   - meteor npm install react --save
   - meteor npm install react-dom --save
   - meteor npm install mocha --save
-  - meteor npm install enzyme --save
-  - meteor npm install enzyme-adapter-react-16 --save
+  - meteor npm install enzyme@^3.0.0 --save
+  - meteor npm install enzyme-adapter-react-15 --save
   - meteor npm install babel-core --save
   - meteor npm install chai --save
   - meteor npm install chai-enzyme --save
