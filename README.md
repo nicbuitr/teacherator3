@@ -1,9 +1,9 @@
 <p align="center">
-    <a href="https://github.com/nicbuitr/teacherator3"><img src="public/img/logo.png" ></a>
+    <a href="../../"><img src="public/img/logo.png" ></a>
 </p>
 
 <p align="center">
-    <a href="../../">
+    <a href="https://travis-ci.com/nicbuitr/teacherator3">
         <img src="https://travis-ci.com/nicbuitr/teacherator3.svg?branch=master" alt="Build Status">
     </a>
 </p>
@@ -18,7 +18,7 @@ Requirements:
 
 - [Meteor.js](https://www.meteor.com/install)
 
-(Optional:
+(Optional):
 
 For testing: [Mocha.js](https://mochajs.org/):
 
@@ -55,3 +55,5 @@ Once its deployed go to http://localhost:3000/
 ## License
 
 MIT © [Nicolás Buitrago Castaño](https://github.com/nicbuitr)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnicbuitr%2Fteacherator3.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnicbuitr%2Fteacherator3?ref=badge_large)
