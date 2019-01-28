@@ -16,9 +16,9 @@ install:
   - meteor npm install chai --save
   - meteor npm install chai-enzyme --save
   - meteor add meteortesting:mocha
-  - meteor npm install nightmare
+
 script:
-- TEST_BROWSER_DRIVER=nightmare meteor test --once --driver-package meteortesting:mocha
+- meteor test --once --driver-package meteortesting:mocha
 
 cache:
   directories:
