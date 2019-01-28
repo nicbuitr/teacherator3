@@ -20,7 +20,7 @@ install:
   - meteor npm install
 
 script:
-- TEST_CLIENT=0 meteor test --once --driver-package meteortesting:mocha
+- meteor test --once --driver-package meteortesting:mocha
 
 cache:
   directories:
