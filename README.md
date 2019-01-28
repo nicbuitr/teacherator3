@@ -1,8 +1,12 @@
 <p align="center">
-    <img src="public/img/logo.png" >
+    <a href="https://github.com/nicbuitr/teacherator3"><img src="public/img/logo.png" ></a>
 </p>
 
-[![Build Status](https://travis-ci.com/nicbuitr/teacherator3.svg?branch=master)](https://travis-ci.com/nicbuitr/teacherator3)
+<p align="center">
+    <a href="../../">
+        <img src="https://travis-ci.com/nicbuitr/teacherator3.svg?branch=master" alt="Build Status">
+    </a>
+</p>
 
 ## How To View:
 
