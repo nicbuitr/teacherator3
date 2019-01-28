@@ -33,11 +33,11 @@ Run:
 
     $ meteor npm install
     
+This will install NPM packages and update the Meteor packages used in the project.
+
 For testing with [Mocha.js](https://mochajs.org/) run:
 
     $ meteor test
-
-This will install NPM packages and update the Meteor packages used in the project.
 
 To initialize the app run:
 
