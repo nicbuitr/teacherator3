@@ -31,7 +31,4 @@
     "eslint": "^3.18.0",
     "eslint-plugin-react": "^6.10.3"
   }
-  "babel": {
-		"plugins": true
-  }
 }
