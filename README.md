@@ -56,4 +56,6 @@ Once its deployed go to http://localhost:3000/
 
 MIT © [Nicolás Buitrago Castaño](https://github.com/nicbuitr)
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnicbuitr%2Fteacherator3.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnicbuitr%2Fteacherator3?ref=badge_shield)
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnicbuitr%2Fteacherator3.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnicbuitr%2Fteacherator3?ref=badge_large)
