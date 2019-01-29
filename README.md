@@ -48,8 +48,8 @@ Once its deployed go to http://localhost:3000/
 
 ## Built with:
 
-[![Meteor](https://github.com/nicbuitr/f/blob/master/meteor.png)](https://www.meteor.com/) | [![React](https://github.com/nicbuitr/f/blob/master/react.png)](https://reactjs.org/)  | [![Node](https://github.com/nicbuitr/f/blob/master/node.png)](https://nodejs.org) | [![MongoDB](https://github.com/nicbuitr/f/blob/master/mongo.png)](https://www.mongodb.com/)  | [![Bootstrap](https://github.com/nicbuitr/f/blob/master/bootstrap3.png)](https://getbootstrap.com/) | [![Mocha](https://github.com/nicbuitr/f/blob/master/mocha.png)](https://mochajs.org/) | [![Chai](https://github.com/nicbuitr/f/blob/master/chai.png)](https://www.chaijs.com/)
-:---:|:---:|:---:|:---:|:---:|:---:|:---:
+[![Meteor](https://github.com/nicbuitr/f/blob/master/meteor.png)](https://www.meteor.com/) | [![React](https://github.com/nicbuitr/f/blob/master/react.png)](https://reactjs.org/)  | [![Node](https://github.com/nicbuitr/f/blob/master/node.png)](https://nodejs.org) | [![npm](https://github.com/nicbuitr/f/blob/master/npm.png)](https://www.npmjs.com/)  | [![MongoDB](https://github.com/nicbuitr/f/blob/master/mongo.png)](https://www.mongodb.com/)  | [![Bootstrap](https://github.com/nicbuitr/f/blob/master/bootstrap3.png)](https://getbootstrap.com/) | [![Mocha](https://github.com/nicbuitr/f/blob/master/mocha.png)](https://mochajs.org/) | [![Chai](https://github.com/nicbuitr/f/blob/master/chai.png)](https://www.chaijs.com/)
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 
 ## License
